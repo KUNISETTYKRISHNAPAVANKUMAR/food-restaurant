@@ -1,0 +1,42 @@
+.details-info{
+    display: flex;
+    padding: 10px;
+}
+.details-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details-left input{
+    padding: 10px;
+    border-radius: 24px;
+    font-size: larger;
+    background-color: tomato;
+    color: aliceblue;
+    margin-top: 10px;
+    border: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.details-left input:hover{
+    background-color: limegreen;
+    color: darkgreen;
+}
+.details-right{
+    width: 50%;
+}
+.details-con h1{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 4px;
+    color: darkmagenta;
+}
+.details-right p{
+    background-color: lemonchiffon;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: darkslateblue;
+}

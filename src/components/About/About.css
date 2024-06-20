@@ -1,0 +1,35 @@
+.about-con{
+    width: 100%;
+}
+.about-img{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../../assets/about.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img h1{
+    font-size: 100px;
+    color: rgb(168, 45, 216);
+}
+h2{
+    color: rgb(115, 111, 49);
+    letter-spacing: 1px;
+}
+p{
+    font-size: large;
+    text-align: justify;
+    letter-spacing: 2px;
+    color: rgb(55, 98, 100);
+}
+.data{
+    box-shadow: 4px 4px 4px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgb(249, 248, 248);
+}

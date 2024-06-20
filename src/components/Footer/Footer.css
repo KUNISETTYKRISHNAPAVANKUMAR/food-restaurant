@@ -1,0 +1,71 @@
+.footer-con{
+    background-color: linen;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-img img{
+    width: 300px;
+}
+.top div h1{
+    margin-bottom: 10px;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    font-size: xx-large;
+}
+.icon{
+    font-size: xx-large;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom div{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.bottom h1{
+    margin: 15px 0 15px 0;
+}
+.icons{
+    font-size: 100px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#whatsapp{
+    color: green;
+}
+#insta{
+    color: blueviolet;
+}
+#fb{
+    color: blue;
+}
+#twit{
+    color: lightblue;
+}
+#yt{
+    color: red;
+}
+#whatsapp:hover,#insta:hover,#fb:hover,#twit:hover,#yt:hover{
+    color: black;
+}
+.copyright{
+    background-color: darkolivegreen;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}

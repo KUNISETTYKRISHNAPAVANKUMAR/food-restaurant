@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(194, 205, 209);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    margin: 10px;
+}
+#name{
+    font-size:larger;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+}
+.routes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.routes a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: large;
+    color: rgb(56, 118, 118);
+}
+.active{
+    color: rgb(245, 244, 244)!important;
+    background-color: rgb(91, 160, 91);
+    padding: 2px;
+    border-radius: 4px;
+}

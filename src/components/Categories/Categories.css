@@ -1,0 +1,33 @@
+.categories{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.category-card{
+    border: 2px solid;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px;
+    cursor: pointer;
+}
+.category-card img{
+    width: 200px;
+    /* border: 2px solid; */
+}
+.category-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.category-card:hover{
+    background-color: lightseagreen;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.category-con h1{
+    text-align: center;
+    padding: 10px;
+    color: rgb(3, 61, 63);
+}
