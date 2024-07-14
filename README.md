@@ -4,11 +4,11 @@ The Food Delivery Application is a user-friendly mobile app that allows customer
 variety of dishes, place orders, and track their delivery in real-time. The app simplifies the food ordering process, enhances customer satisfaction.
 
 # Features 😎👌
-+Browse Categories
-+View Food Items
-+Add to Cart
-+View Food Details
-+Browse Food Items
++ Browse Categories
++ View Food Items
++ Add to Cart
++ View Food Details
++ Browse Food Items
 
 # Demo
 ## Home
