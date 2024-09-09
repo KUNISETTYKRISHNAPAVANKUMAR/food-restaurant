@@ -1,23 +1,25 @@
 .intro{
     width: 100%;
     height: 100vh;
-    background-image: url(../../assets/food_11.png);
+    /* background-image: url(../../assets/home.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
+    background-color: black;
     /* flex-direction: column; */
 }
 .intro h2{
-    border: 2px solid;
+    border: 0.8px solid white;
     padding: 10px;
     margin: 10px;
     text-align: center;
+    color: lightgrey;
 }
 .intro h1{
-    color: rgb(41, 90, 130);
+    color: white;
 }
 .intros{
     display: flex;
@@ -29,10 +31,46 @@
     min-width: 250px;
     max-width: 100%;
 }
+.features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 10px;
+    height: 300px;
+}
+.features-con{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+.feature-card{
+    display: flex;
+    gap: 10px;
+    border-right: 2px solid;
+    width: 100%;
+    max-width: 400px;
+    min-width: 60px;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    flex-wrap: wrap;
+    color: rgb(8, 34, 100);
+    text-align: center;
+}
+.feature-card:last-child{
+    border-right: none;
+}
 #chef{
     max-width:  600px;
     flex: 1 1 auto;
     min-width: 250px;
+}
+.intros button a{
+    text-decoration: none;
+    color: aliceblue;
 }
 #explore{
     background-color: rgb(71, 83, 80);
@@ -68,14 +106,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 10px 0;
-    box-shadow: 0px 2px 6px;
+    padding: 0 0 10px  0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.5s;
     border-radius: 10px;
     cursor: pointer;
 }
 #veg img,#non-veg img{
-    width: 80%;
+    width: 100%;
     margin-bottom: 10px;
 }
 #veg h3,#non-veg h3{
@@ -136,6 +174,49 @@
     background-color: lightblue;
 }
 
+.home-chef{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.home-chef-card{
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+span{
+    color: orange;
+}
+.title{
+    color: blue;
+    font-weight: bold;
+}
+.home-chef-con{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-chef-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%
+}
+
 .quote{
     font-size: 40px;
     font-weight: bolder;
@@ -172,15 +253,37 @@
         width: 100%;
         margin-bottom: 18px;
     }
-}
-
-@media screen and (max-width:500px) {
     .intros h1{
         text-align: center;
         width: 100%;
     }
+    .intros h2{
+        margin: auto;
+    }
     .quote{
         margin: auto;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .intro{
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .intros h1{
+        text-align: center;
+        width: 100%;
+        margin: 18px 0;
+    }
+    .intros h2{
+        margin: 18px 0;
+    }
+    .intros{
+        gap: 10px;
+    }
+    .intro button{
+        margin: auto;
     }
 }
