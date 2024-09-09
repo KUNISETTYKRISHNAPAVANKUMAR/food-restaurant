@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .top div{
     display: flex;
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: space-around;
     font-size: xx-large;
+    flex-wrap: wrap;
 }
 .icon{
     font-size: xx-large;
@@ -29,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .bottom div{
     display: flex;

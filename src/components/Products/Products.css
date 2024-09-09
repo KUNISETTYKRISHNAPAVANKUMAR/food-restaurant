@@ -1,12 +1,14 @@
 .product-head{
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
 }
 .product-head h1{
     margin-right: 10px;
     letter-spacing: 2px;
     color: rgb(81, 45, 2);
+    min-width: 100px;
 }
 .product-head input{
     margin-left: 10px;
@@ -18,12 +20,14 @@
     padding: 10px;
     font-size: large;
     color: brown;
+    min-width: 100px;
 }
 .products{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 .product-card{
     display: flex;
@@ -33,7 +37,9 @@
     box-shadow: 1px 1px 4px;
     transition: 0.5s;
     max-width: 500px;
+    min-width: 100px;
     cursor: pointer;
+    overflow: hidden;
 }
 .product-card img{
     width: 100%;
@@ -49,10 +55,99 @@
     color: brown;
     letter-spacing: 2px;
 }
+
+.product-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-top-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.product-top-left-tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-top-left-tags div{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    margin-right: 10px;
+    border-radius: 24px;
+}
+
+.product-top-left button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: large;
+    border: none;
+    border-radius: 24px;
+}
+
+.product-top-left h1{
+    max-width: 400px;
+    width: 100%;
+    min-width: 200px;
+    font-size: 50px;
+}
+
 .procat-name{
     background-color: aqua;
 }
 .product-card:hover{
     background-color: lightgoldenrodyellow;
     box-shadow: 2px 2px 6px darkgoldenrod;
+}
+
+@media screen and (max-width:1200px) {
+    .pro-cat{
+        letter-spacing: 0;
+        font-size: 1rem;
+    }
+    .pro-details h1{
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .products{
+        grid-template-columns: auto auto auto;
+    }
+    .product-top{
+        margin-top: 18px;
+    }
+    .product-top-left{
+        align-items: center;
+        padding: 10px;
+    }
+    .product-top-left h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .pro-details{
+        flex-direction: column;
+        align-items: start;
+        gap: 2px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .products{
+        grid-template-columns: auto auto;
+    }
+    .product-head{
+        flex-direction: column;
+        align-items: center;
+    }
 }

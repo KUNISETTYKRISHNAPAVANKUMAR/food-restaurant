@@ -9,6 +9,7 @@
     width: 100%;
     padding: 10px;
     background-color: rgb(194, 205, 209);
+    align-items: center;
 }
 .logo{
     display: flex;
@@ -29,15 +30,47 @@
     align-items: center;
     justify-content: center;
 }
-.routes a{
+.routes a,.mobile a{
     margin: 10px;
     text-decoration: none;
     font-size: large;
     color: rgb(56, 118, 118);
+    padding: 10px;
 }
 .active{
     color: rgb(245, 244, 244)!important;
     background-color: rgb(91, 160, 91);
     padding: 2px;
     border-radius: 4px;
+}
+
+.ham{
+    display: none;
+}
+
+.mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: antiquewhite;
+    width: 300px;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.cross{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:690px) {
+    .ham{
+        display: block;
+    }
+    .routes{
+        display: none;
+    }
 }

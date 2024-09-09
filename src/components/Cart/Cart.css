@@ -1,0 +1,105 @@
+.cart-con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+}
+.cart-con-top{
+    display: flex;
+    align-items: center;
+}
+.cart-con-top h1{
+    color: darkblue;
+}
+#cart{
+    font-size:xx-large;
+    color: blue;
+    margin: 10px;
+}
+.cart-card-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.cart-card{
+    display: flex;
+    border-bottom: 2px solid lightseagreen;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.cart-card img{
+    width: 200px;
+    border-radius: 50%;
+}
+.cart-card div{
+    display: flex;
+    align-items: center;
+}
+#cart-details{
+    display: flex;
+    flex-direction: column;
+}
+#cart-details h1{
+    padding: 10px;
+    background-color:rgb(208, 224, 224);
+    border-radius: 24px;
+    color: rgb(12, 3, 100);
+}
+.cart-card input{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 24px;
+    border: none;
+    font-size: larger;
+    height: fit-content;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cart-card input:hover{
+    background-color: antiquewhite;
+    color: blue;
+}
+.cart-count div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+.cart-count div h1{
+    color: rgb(65, 3, 65);
+}
+.cart-count div h3{
+    background-color: rgb(208, 224, 224);
+    padding: 5px;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+.count-con{
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.count-con button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .cart-card{
+        flex-direction: column;
+    }
+    #cart-details{
+        text-align: center;
+        align-items: center;
+    }
+}

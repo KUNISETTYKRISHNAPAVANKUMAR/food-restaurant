@@ -1,5 +1,6 @@
 .about-con{
     width: 100%;
+    height: auto;
 }
 .about-img{
     width: 100%;
@@ -10,6 +11,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-attachment: fixed;
+    margin-bottom: 110px;
 }
 .about-img h1{
     font-size: 100px;
@@ -32,4 +36,36 @@ p{
     border: 2px solid;
     border-radius: 10px;
     background-color: rgb(249, 248, 248);
+}
+
+.fcard{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    bottom: -100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.fcard img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.line h1{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.fcard-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }

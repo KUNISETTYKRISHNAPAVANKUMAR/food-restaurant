@@ -1,6 +1,7 @@
 .details-info{
     display: flex;
     padding: 10px;
+    gap: 10px;
 }
 .details-left{
     width: 50%;
@@ -39,4 +40,41 @@
     border-radius: 10px;
     letter-spacing: 2px;
     color: darkslateblue;
+}
+#success-con{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 100%;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#success-con h1{
+   height: 100px;
+   box-shadow: 1px 2px 4px;
+   border-radius: 10px;
+   color: rgb(222, 231, 231);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(2, 12, 74);
+   border: none;
+}
+
+.details-left img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width:680px) {
+    .details-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-left,.details-right{
+        width: 100%;
+    }
 }
