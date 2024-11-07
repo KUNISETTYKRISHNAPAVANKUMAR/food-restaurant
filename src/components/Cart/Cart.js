@@ -85,7 +85,7 @@ const Cart = () => {
         )
     else {
         return (
-            <h1>No added</h1>
+            <h1>No Items added</h1>
         )
     }
 }

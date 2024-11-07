@@ -11,7 +11,19 @@ import chef2 from "../../assets/chef2.jpg"
 import chef3 from "../../assets/chef3.jpg"
 import { MdCleanHands, MdRestaurant, MdSavings } from 'react-icons/md'
 import { FaThumbsUp } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+  let navv=useNavigate()
+  function usefetchDetails(id){
+    if(id==1)
+      navv("categories/Vegetarian")
+    if(id==2)
+      navv("categories/Chicken")
+    if(id==3)
+      navv("categories")
+    if(id==4)
+      navv("cart")
+  }
   return (
     <>
       <div className="intro">
@@ -20,7 +32,7 @@ const Home = () => {
           <p className="quote">We Value Our Customers</p>
           <h2>Let's Enjoy the Food with Family</h2>
           <p style={{ color: "skyblue" }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quam.</p>
-          <button id='explore'><a href="#features">Explore Now</a></button>
+          <button id='explore' onClick={()=>usefetchDetails(3)}>Explore Now</button>
         </div>
         <div className="chef">
           <img src={chef} alt="" id='chef' />
@@ -29,13 +41,13 @@ const Home = () => {
       <div className="specials">
         <h1><span>Our</span> Specials</h1>
         <div className="special-cards">
-          <div id="veg">
+          <div id="veg" onClick={()=>usefetchDetails(1)}>
             <img src={veg} alt="" />
-            <h3>VEG</h3>
+            <h3 >VEG</h3>
           </div>
-          <div id="non-veg">
+          <div id="non-veg" onClick={()=>usefetchDetails(2)}>
             <img src={nonVeg} alt="" />
-            <h3>NON-VEG</h3>
+            <h3 >NON-VEG</h3>
           </div>
         </div>
       </div>
@@ -80,7 +92,7 @@ const Home = () => {
               Provident aperiam esse facere?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum porro vero molestias nulla,
               omnis adipisci minima debitis neque architecto veritatis eveniet, delectus asperiores.</p>
-            <input type="button" value="Checkout" id='services-btn' />
+            <input type="button" value="Checkout" id='services-btn' onClick={()=>usefetchDetails(4)}/>
           </div>
           <img src={homedelivery} alt="" />
         </div>
